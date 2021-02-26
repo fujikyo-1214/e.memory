@@ -1,0 +1,7 @@
+<div class="card">
+  <%= link_to image_tag(eat.image, class: :card__img ), eat_path(eat.id)%>
+  <div class="card__body">
+    <%= link_to eat.title, eat_path(eat.id), class: :card__title%>
+    <%= link_to "by #{eat.user.name}", "/users/#{eat.user.id}", class: :card__user %>
+  </div>
+</div>
