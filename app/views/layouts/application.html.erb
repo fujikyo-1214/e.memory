@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProtoSpace</title>
+    <title>E.Memory</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -15,13 +15,13 @@
       <div class="inner">
         <div class="nav">
           <div class="nav__left">
-            <%= link_to image_tag("logo.png", class: :logo), root_path %>
+            <%= link_to "E.Memory", root_path, class: :title__logo %>
           </div>
           <%# ログインしているときは以下を表示するようにしましょう %>
           <% if user_signed_in? %>
             <div class="nav__right">
               <%= link_to "ログアウト", destroy_user_session_path, class: :nav__btn, method: :delete %>
-              <%= link_to "New Proto", new_prototype_path, class: :nav__btn %>
+              <%= link_to "New Eat", new_eat_path, class: :nav__btn %>
             </div>
           <%# // ログインしているときは上記を表示するようにしましょう %>
           <%# ログインしていないときは以下を表示するようにしましょう %>
@@ -37,7 +37,7 @@
     </header>
     <%= yield %>
     <footer class="footer">
-      <p class="copyright">Copyright © PROTO SPACE All rights reserved.</p>
+      <p class="copyright">Copyright © 2021 E.Memory</p>
     </footer>
   </body>
 </html>

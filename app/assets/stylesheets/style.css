@@ -18,6 +18,7 @@ div {
 body {
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
   color: #3b4043;
+  background-image: linear-gradient(#bff8ff, #e3afff);
 }
 
 li {
@@ -27,6 +28,7 @@ li {
 img {
   max-width: 100%;
   vertical-align: bottom;
+  border-radius: 50%;
 }
 
 a {
@@ -37,7 +39,7 @@ a {
 /* ヘッダー */
 
 .header {
-  background-color: #f1f8fe;
+  background-image: linear-gradient(#c9ffbf, #afbeff);
   margin-bottom: 48px;
   padding: 20px 0;
 
@@ -57,11 +59,12 @@ a {
 .nav__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: #87CEFA;
+  font-size: 1em;
+  font-family: 'Philosopher', serif;
+  color: #cb11d8;
   text-decoration: none;
   user-select: none;
-  border: 1px #87CEFA solid;
+  border: 1px #cb11d8;
   border-radius: 3px;
   transition: 0.4s ease;
 }
@@ -82,9 +85,15 @@ a {
   opacity: 0.5;
 }
 
+.title__logo {
+  font-size: 30px;
+  font-family: 'Philosopher', serif;
+}
+
 /* フォーム周り */
 .form__wrapper{
   min-height: calc(100vh - 161px);
+  
 }
 
 .form__text {
@@ -122,6 +131,9 @@ a {
 
 .greeting{
   margin-bottom: 20px;
+  font-family: 'Philosopher', serif;
+  display: flex;
+  justify-content: center;
 }
 .greeting__link{
   text-decoration: underline;
@@ -149,6 +161,7 @@ a {
   font-size: 20px;
   margin-bottom: 8px;
   font-weight: bold;
+  text-align: center;
 }
 .card__summary {
   font-size: 16px;
@@ -239,27 +252,16 @@ a {
 .user__wrapper{
   min-height: calc(100vh - 161px);
 }
+.page-heading {
+  text-align: center;
+}
+
 .table{
   border-collapse: collapse;
   margin-bottom: 32px;
   width: 50%;
 }
-.table__col1{
-  text-align: left;
-  font-weight: bold;
-  background: #fafafa;
-  border-collapse: collapse;
-  border: 1px solid #f5f5f5;
-  width: 30%;
-  padding: 8px;
-}
-.table__col2{
-  text-align: left;
-  border: 1px solid #f5f5f5;
-  border-collapse: collapse;
-  width: 70%;
-  padding: 16px 8px;
-}
+
 .user__card {
   display: flex;
   flex-wrap: wrap;
@@ -321,3 +323,9 @@ a {
     width: 100%;
   }
 }
+
+/* gem 'kaminari' */
+  .p-top {
+    text-align: center;
+    margin:0 auto;
+  }
