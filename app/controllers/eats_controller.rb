@@ -3,7 +3,7 @@ class EatsController < ApplicationController
   before_action :move_to_index, only: [:edit]
 
   def index
-    @eats = Eat.page(params[:page]).per(4).order('created_at DESC')
+    @eats = Eat.page(params[:page]).per(6).order('created_at DESC')
   end
 
   def new
